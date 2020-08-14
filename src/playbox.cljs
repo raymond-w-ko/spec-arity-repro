@@ -12,7 +12,8 @@
   ([spec form]
    (fake-expound-str spec form {}))
   ([spec form opts]
-   (println spec form opts)))
+   (println spec form opts)
+   form))
 (spec/fdef fake-expound-str
   :args (spec/cat :spec any?
                   :form any?
@@ -21,7 +22,7 @@
 
 (defn test-fn []
   (orc/instrument `fake-expound-str)
-  (fake-expound-str 1 2))
+  (fake-expound-str :foo "bar"))
 
 (defn handler []
   (js/console.log "Hello, World!")
