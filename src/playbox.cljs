@@ -1,10 +1,9 @@
 (ns playbox
   (:require
    [cljs.spec.alpha :as spec]
-   [cljs.spec.test.alpha :as st]
+   [cljs.spec.test.alpha :as stest]
 
-   ;; NOTE: uncomment this and code breaks
-   [orchestra-cljs.spec.test]
+   [orchestra-cljs.spec.test :as orc]
 
    [expound.alpha :as expound]))
 
@@ -21,7 +20,7 @@
   :ret string?)
 
 (defn test-fn []
-  (cljs.spec.test.alpha/instrument `fake-expound-str)
+  (orc/instrument `fake-expound-str)
   (fake-expound-str 1 2))
 
 (defn handler []
