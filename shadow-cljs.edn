@@ -1,0 +1,17 @@
+{:deps {:aliases [:handler]}
+
+ ; :nrepl false
+ :nrepl {:middleware [cider.piggieback/wrap-cljs-repl]}
+
+ :http {:port 3449
+        :host "0.0.0.0"}
+
+ :builds
+ {:handler
+  {:target :node-library
+
+   :exports {:handler playbox/handler}
+   :compiler-options {:optimizations :none}
+
+   :output-dir "./"
+   :output-to "./handler.js"}}}

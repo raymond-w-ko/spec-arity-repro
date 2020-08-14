@@ -1,0 +1,16 @@
+{
+  "name": "spec-arity-repro",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {},
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "dependencies": {
+    "react": "16.13.0",
+    "react-dom": "16.13.0"
+  },
+  "devDependencies": {
+    "shadow-cljs": "2.10.14"
+  }
+}
