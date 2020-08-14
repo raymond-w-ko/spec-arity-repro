@@ -3,8 +3,10 @@
  {;; official clojure
   org.clojure/clojurescript {:mvn/version "1.10.773"}
   org.clojure/spec.alpha {:mvn/version "0.2.187"}
-  orchestra {:mvn/version "2020.07.12-1"}
   expound {:mvn/version "0.8.5"}
+
+  ; orchestra {:mvn/version "2019.02.06-1"}
+  orchestra {:mvn/version "2020.07.12-1"}
 
   olical/depot {:mvn/version "2.0.1"}}
 
